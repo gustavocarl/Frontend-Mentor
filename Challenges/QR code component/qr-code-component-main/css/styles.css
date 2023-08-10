@@ -1,90 +1,41 @@
-body,
-html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 body {
     background: #D5E1EF;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    margin: 0 1.5rem;
 }
 
 .container {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1rem;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
+}
+
+.card {
+    max-width: 20rem;
     background: #FFFFFF;
-    border-radius: 16px;
-}
-
-.qr-code__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.qr-code__image_img {
-    border-radius: 16px;
-    width: 100%;
-}
-
-.qr-code__text {
-    padding-bottom: 2rem;
+    border-radius: 1rem;
     text-align: center;
 }
 
-.qr-code__text__title {
-    margin-bottom: 1rem;
+.card-image {
+    width: 90%;
+    border-radius: 0.625rem;
+    margin: 5%;
 }
 
-.qr-code__text__title {
-    font-size: 1.5rem;
+.card-heading {
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #112240;
+    color: #020202;
+    margin: 2% 5%;
+    padding: 0 5%;
 }
 
-.qr-code__text__paragraph {
-    color: #9193a2;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 80%;
-        height: 70vh;
-        padding: 3rem 1.5rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .container {
-        width: 65vw;
-        height: 95vh;
-        align-items: flex-start;
-    }
-
-    .qr-code__image_img {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    .container {
-        width: 100%;
-        height: 80vh;
-        align-items: flex-start;
-    }
+.card-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #727272;
+    margin: 5% 5% 12%;
+    padding: 0 5%;
 }
